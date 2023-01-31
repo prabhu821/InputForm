@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width-device-width,initial-scale=1.0">
+    <title>HTML 5 Input Form</title>
+    <link rel="stylesheet" href="../CSS/inputform.css">
+</head>
+
+<body>
+    <header class="header-container">
+        <h1>HTML5 Input Form Element</h1>
+    </header>
+    <form>
+        <div>
+            <label for="text">Text Box for Name:</label>
+            <input id="text" type="text" name="text" placeholder="Name">
+            <error-output class="text-error" for="text"></error-output>
+        </div>
+        <div>
+            <label for="pwd">Text Box for Password:</label>
+            <input id="pass" type="password" placeholder="Password" required placeholder="Password">
+            <error-output class="pwd-error" for="pwd"></error-output>
+        </div>
+        <div>
+            <label for="Email">Text Box for Email:</label>
+            <input id="Email" name="Email_id" type="email">
+            <error-output class="email-error" for="Email"></error-output>
+        </div>
+        <div>
+            <label for="url">Text Box for url:</label>
+            <input id="url" name="URL" type="url">
+            <error-output class="text-error" for="url"></error-output>
+        </div>
+        <div>
+            <label for="tele">Text Box for mobile Number:</label>
+            <input id="tele" name="Mobile_Number" type="tele">
+            <error-output class="tele-error" for="tele"></error-output>
+        </div>
+        <div>
+            <label for="search">Text Box for Search:</label>
+            <input id="search" name="Search" type="search">
+            <error-output class="text-error" for="Search"></error-output>
+        </div>
+        <div>
+            <label for="date">dateTime</label>
+            <input id="date" name="Date" type="datetime-local">
+            <span class="validity"></span>
+        </div>
+        <div>
+            <label for="salary">Choose salary input:</label>
+            <input id="salary" name="Salary" type="range" min="30000" max="40000" step="100">
+            <output class="salary-output" for="salary">400000</output>
+        </div>
+        <button type="submit">Submit</button>
+        <input type="reset">
+    </form>
+    <script rel="text/javascript" src="../JS/inptForm.js">
+    </script>
+</body>
+
+</html>
